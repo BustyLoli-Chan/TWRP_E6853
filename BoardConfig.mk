@@ -1,12 +1,12 @@
-DEVICE_TREE := device/zte/ailsa_ii
+DEVICE_TREE := device/sony/satsuki
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := ailsa_ii
+TARGET_BOOTLOADER_BOARD_NAME := satsuki
 
 # Platform
-TARGET_BOARD_PLATFORM := msm8996
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno530
+TARGET_BOARD_PLATFORM := msm8994
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno430
 
 # Flags
 #TARGET_GLOBAL_CFLAGS +=
@@ -28,11 +28,11 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Kernel
-#TARGET_KERNEL_SOURCE := kernel/zte/msm8996
+#TARGET_KERNEL_SOURCE := kernel/sony/msm8994
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CONFIG := twrp_defconfig
-TARGET_KERNEL_DEVICE_DEFCONFIG := device_zte_ailsa_ii
+TARGET_KERNEL_DEVICE_DEFCONFIG := aosp_kitakami_satsuki
 
 TARGET_PREBUILT_KERNEL := $(DEVICE_TREE)/Image.gz-dtb
 

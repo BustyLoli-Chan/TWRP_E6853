@@ -6,8 +6,8 @@ on fs
     write /sys/class/android_usb/android0/idVendor 19d2
     write /sys/class/android_usb/android0/idProduct 1352
     write /sys/class/android_usb/android0/bDeviceClass 0
-    write /sys/class/android_usb/android0/iManufacturer "ZTE Incorporated"
-    write /sys/class/android_usb/android0/iProduct "ZTE HSUSB Device"
+    write /sys/class/android_usb/android0/iManufacturer "sony Incorporated"
+    write /sys/class/android_usb/android0/iProduct "sony HSUSB Device"
     write /sys/class/android_usb/android0/iSerial ${ro.serialno}
     write /sys/class/android_usb/android0/f_ffs/aliases adb
     write /sys/class/android_usb/android0/functions adb

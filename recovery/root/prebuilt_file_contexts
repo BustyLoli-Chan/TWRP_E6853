@@ -821,12 +821,12 @@
 #
 /data/misc/qvop(/.*)?      u:object_r:qvop_data_file:s0
 /data/misc/tloc(/.*)?      u:object_r:tlocd_data_file:s0
-#line 1 "vendor/zte/sepolicy/file_contexts"
+#line 1 "vendor/sony/sepolicy/file_contexts"
 
-###zte add for file_context
+###sony add for file_context
 /system/bin/copypartnerapp                  u:object_r:shell_exec:s0
 /system/bin/app6939                         u:object_r:app6939_exec:s0
-/system/bin/ztediag                         u:object_r:ztediag_exec:s0
+/system/bin/sonydiag                         u:object_r:sonydiag_exec:s0
 /system/bin/ftmdaemon-oem                   u:object_r:ftmd_exec:s0
 /system/bin/getlogtofile                    u:object_r:getlog_exec:s0
 /system/bin/modemservice                    u:object_r:modemservice_exec:s0
@@ -888,27 +888,27 @@
 
 
 /dev/vlog                                    u:object_r:radio_device:s0
-#zte add for ext4check
+#sony add for ext4check
 /system/bin/ext4check.sh      u:object_r:vold_exec:s0
 /system/bin/checkdata         u:object_r:ueventd_exec:s0
 
-#zte add for usbscript related file_context
+#sony add for usbscript related file_context
 /sbin/usbconfig               u:object_r:usbscript_exec:s0
 
 /sys/devices/system/led-flash(/.*)?    u:object_r:sysfs_devices_system_led-flash:s0
 
-/dev/block/platform/soc.0/7824900.sdhci/by-name/ztecfg     u:object_r:oem_blk_device:s0
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/ztecfg     u:object_r:oem_blk_device:s0
-/dev/block/platform/msm_sdcc\.1/by-name/ztecfg              u:object_r:oem_blk_device:s0
+/dev/block/platform/soc.0/7824900.sdhci/by-name/sonycfg     u:object_r:oem_blk_device:s0
+/dev/block/platform/soc.0/f9824900.sdhci/by-name/sonycfg     u:object_r:oem_blk_device:s0
+/dev/block/platform/msm_sdcc\.1/by-name/sonycfg              u:object_r:oem_blk_device:s0
 #add for factory reset protection
-/dev/block/platform/soc.0/7824900.sdhci/by-name/ztelk         u:object_r:oem_blk_device:s0
-/dev/block/platform/soc.0/f9824900.sdhci/by-name/ztelk         u:object_r:oem_blk_device:s0
+/dev/block/platform/soc.0/7824900.sdhci/by-name/sonylk         u:object_r:oem_blk_device:s0
+/dev/block/platform/soc.0/f9824900.sdhci/by-name/sonylk         u:object_r:oem_blk_device:s0
 
 #kernel 3.18 emmc
 /dev/block/platform/soc/7824900.sdhci/by-name/sec            u:object_r:oem_blk_device:s0
-/dev/block/platform/soc/7824900.sdhci/by-name/ztecfg         u:object_r:oem_blk_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/sonycfg         u:object_r:oem_blk_device:s0
 
-/dev/block/platform/soc/624000.ufshc/by-name/ztecfg                              u:object_r:oem_blk_device:s0
+/dev/block/platform/soc/624000.ufshc/by-name/sonycfg                              u:object_r:oem_blk_device:s0
 /dev/block/platform/soc/624000.ufshc/by-name/fbop                                u:object_r:oem_blk_device:s0
 /dev/block/platform/soc/624000.ufshc/by-name/cryptkey                                u:object_r:oem_blk_device:s0
 /dev/block/platform/soc/624000.ufshc/by-name/sec                                u:object_r:oem_blk_device:s0
@@ -928,8 +928,8 @@
 /dev/ndt_i2c_node	u:object_r:ndt_device:s0
 
 #NFC
-/dev/pn548	u:object_r:zte_nfc_device:s0
-/dev/pn547	u:object_r:zte_nfc_device:s0
+/dev/pn548	u:object_r:sony_nfc_device:s0
+/dev/pn547	u:object_r:sony_nfc_device:s0
 
 /system/bin/alipayServiced            u:object_r:alipayServiced_exec:s0
 

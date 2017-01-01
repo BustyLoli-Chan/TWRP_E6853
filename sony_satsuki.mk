@@ -1,5 +1,5 @@
 # Release name
-PRODUCT_RELEASE_NAME := ailsa_ii
+PRODUCT_RELEASE_NAME := satsuki
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
@@ -12,15 +12,15 @@ PRODUCT_PACKAGES += \
 	charger
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_BRAND := ZTE
-PRODUCT_MANUFACTURER := ZTE
+PRODUCT_BRAND := sony
+PRODUCT_MANUFACTURER := sony
 
 # The below values will be replaced for compatibility with OTAs!
-PRODUCT_MODEL := ZTE A2017U
-PRODUCT_DEVICE := ailsa_ii
-PRODUCT_NAME := omni_ailsa_ii
+PRODUCT_MODEL := sony A2017U
+PRODUCT_DEVICE := satsuki
+PRODUCT_NAME := omni_satsuki
 
 # Updated values (see system.prop)
-# PRODUCT_MODEL := ZTE A2017U
-# PRODUCT_DEVICE := ailsa_ii
+# PRODUCT_MODEL := sony A2017U
+# PRODUCT_DEVICE := satsuki
 # PRODUCT_NAME := P996A01
