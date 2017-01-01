@@ -1,5 +1,7 @@
 include device/sony/satsuki/BoardConfig.mk
 
+BUILD_KERNEL := false
+
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
