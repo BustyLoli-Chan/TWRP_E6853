@@ -1,1 +1,1 @@
-add_lunch_combo omni_ailsa_ii-eng
+add_lunch_combo aosp_e6853-recovery
